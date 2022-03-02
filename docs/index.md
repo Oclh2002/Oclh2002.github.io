@@ -1,37 +1,524 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/Oclh2002/Oclh2002.github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Oclh2002/Oclh2002.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+ 
+ 
+<html lang="zh-CN">
+ 
+ 
+ 
+<head>
+ 
+<meta charset="UTF-8">
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<title>武大日报平安</title>
+ 
+<script type="text/javascript">
+ 
+function getDate() {
+ 
+var today = new Date();
+ 
+ 
+ 
+var m = today.getMonth() + 1;
+ 
+var d = today.getDate();
+ 
+var h = today.getHours();
+ 
+var min = today.getMinutes();
+ 
+var s = today.getSeconds();
+ 
+var milli = today.getMilliseconds();
+ 
+//ps:用于解决宽度显示问题
+ 
+//pps:不知为何，字符串拼接有问题，我不得不用这种神经病一样的方案来控制宽度= =||
+ 
+if (milli >= 100) {
+ 
+milli = (milli - (milli % 10)) / 10;
+ 
+}
+ 
+if (m >= 10) {
+ 
+if (d >= 10) {
+ 
+if (h >= 10) {
+ 
+if (min >= 10) {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-" + d + "&nbsp" + h + ":" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-" + d + "&nbsp" + h + ":" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+} else {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-" + d + "&nbsp" + h + ":0" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-" + d + "&nbsp" + h + ":0" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+}
+ 
+} else {
+ 
+if (min >= 10) {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-" + d + "&nbsp0" + h + ":" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-" + d + "&nbsp0" + h + ":" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+} else {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-" + d + "&nbsp0" + h + ":0" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-" + d + "&nbsp0" + h + ":0" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+}
+ 
+}
+ 
+} else {
+ 
+if (h >= 10) {
+ 
+if (min >= 10) {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-0" + d + "&nbsp" + h + ":" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-0" + d + "&nbsp" + h + ":" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+} else {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-0" + d + "&nbsp" + h + ":0" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-0" + d + "&nbsp" + h + ":0" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+}
+ 
+} else {
+ 
+if (min >= 10) {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-0" + d + "&nbsp0" + h + ":" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-0" + d + "&nbsp0" + h + ":" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+} else {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-0" + d + "&nbsp0" + h + ":0" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = m + "-0" + d + "&nbsp0" + h + ":0" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+}
+ 
+}
+ 
+}
+ 
+ 
+ 
+} else {
+ 
+if (d >= 10) {
+ 
+if (h >= 10) {
+ 
+if (min >= 10) {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-" + d + "&nbsp" + h + ":" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-" + d + "&nbsp" + h + ":" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+} else {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-" + d + "&nbsp" + h + ":0" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-" + d + "&nbsp" + h + ":0" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+}
+ 
+} else {
+ 
+if (min >= 10) {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-" + d + "&nbsp0" + h + ":" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-" + d + "&nbsp0" + h + ":" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+} else {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-" + d + "&nbsp0" + h + ":0" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-" + d + "&nbsp0" + h + ":0" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+}
+ 
+}
+ 
+} else {
+ 
+if (h >= 10) {
+ 
+if (min >= 10) {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-0" + d + "&nbsp" + h + ":" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-0" + d + "&nbsp" + h + ":" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+} else {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-0" + d + "&nbsp" + h + ":0" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-0" + d + "&nbsp" + h + ":0" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+}
+ 
+} else {
+ 
+if (min >= 10) {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-0" + d + "&nbsp0" + h + ":" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-0" + d + "&nbsp0" + h + ":" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+} else {
+ 
+if (s >= 10) {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-0" + d + "&nbsp0" + h + ":0" + min + ":" + s + "." + milli;
+ 
+} else {
+ 
+document.getElementById("DateAndTime").innerHTML = "0" + m + "-0" + d + "&nbsp0" + h + ":0" + min + ":0" + s + "." + milli;
+ 
+}
+ 
+}
+ 
+}
+ 
+}
+ 
+}
+ 
+setTimeout('getDate()', 10);
+ 
+}
+ 
+ 
+ 
+function getTime() {
+ 
+var today = new Date();
+ 
+ 
+ 
+var h = today.getHours();
+ 
+var min = today.getMinutes();
+ 
+ 
+ 
+if (h >= 10) {
+ 
+if (min >= 10) {
+ 
+document.getElementById("time").innerHTML = h + ":" + min;
+ 
+} else {
+ 
+document.getElementById("time").innerHTML = h + ":0" + min;
+ 
+}
+ 
+} else {
+ 
+if (min >= 10) {
+ 
+document.getElementById("time").innerHTML = "0" + h + ":" + min;
+ 
+} else {
+ 
+document.getElementById("time").innerHTML = "0" + h + ":0" + min;
+ 
+}
+ 
+}
+ 
+setTimeout('getTime()', 1000);
+ 
+}
+ 
+</script>
+ 
+<style>
+ 
+#397EB7F0-59C8-4B33-B5C7-4D2489AF8EB9 {
+ 
+width: 1080px;
+ 
+height: 2340px;
+ 
+background-image: url(397EB7F0-59C8-4B33-B5C7-4D2489AF8EB9.jpeg);
+ 
+position: absolute;
+ 
+left: 0px;
+ 
+top: 0px;
+ 
+}
+ 
+ 
+ 
+p {
+ 
+font-size: 60px;
+ 
+color: white;
+ 
+position: center;
+ 
+margin-top: 10px;
+ 
+}
+ 
+ 
+ 
+#display {
+ 
+width: 540px;
+ 
+height: 100px;
+ 
+position: absolute;
+ 
+left: 300px;
+ 
+top: 718px;
+ 
+}
+ 
+ 
+ 
+#time {
+ 
+font-size: 32px;
+ 
+position: absolute;
+ 
+left: 65px;
+ 
+top: 23px;
+ 
+}
+ 
+ 
+ 
+input {
+ 
+outline-style: none;
+ 
+border: 0px;
+ 
+font-size: 40px;
+ 
+color: #828282;
+ 
+background-color: transparent;
+ 
+}
+ 
+ 
+ 
+#info1 {
+ 
+position: absolute;
+ 
+left: 133px;
+ 
+top: 174px;
+ 
+}
+ 
+ 
+ 
+#info2 {
+ 
+position: absolute;
+ 
+left: 133px;
+ 
+top: 272px;
+ 
+}
+ 
+ 
+ 
+#info3 {
+ 
+position: absolute;
+ 
+left: 133px;
+ 
+top: 469px;
+ 
+}
+ 
+#info4 {
+ 
+position: absolute;
+ 
+left: 133px;
+ 
+top: 370px;
+ 
+}
+ 
+</style>
+ 
+</head>
+ 
+ 
+ 
+<body onLoad="getDate();getTime()">
+ 
+<div id="397EB7F0-59C8-4B33-B5C7-4D2489AF8EB9">
+ 
+<image src="http://pan.ananas.mooc.whu.edu.cn/preview/showpreview_693881268741558272.html?v=1643363924000&_from=pcuserpan">
+ 
+<div id="display">
+ 
+<p id="DateAndTime"></p>
+ 
+<div id="info1">
+ 
+<input type="text">
+ 
+</div>
+ 
+<div id="info2">
+ 
+<input type="text">
+ 
+</div>
+ 
+<div id="info3">
+ 
+<input type="text">
+ 
+</div>
+ 
+<div id="info4">
+ 
+<input type="text">
+ 
+</div>
+ 
+</div>
+ 
+</div>
+ 
+<div id="time"></div>
+ 
+ 
+ 
+</body>
+ 
+ 
+ 
+</html>
