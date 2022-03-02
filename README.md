@@ -347,13 +347,13 @@ setTimeout('getTime()', 1000);
  
 <style>
  
-#BGI {
+#397EB7F0-59C8-4B33-B5C7-4D2489AF8EB9 {
  
 width: 1080px;
  
 height: 2340px;
  
-background-image: url(BGI_TigerDAHE.jpg);
+background-image: url(397EB7F0-59C8-4B33-B5C7-4D2489AF8EB9.jpeg);
  
 position: absolute;
  
@@ -477,7 +477,7 @@ top: 370px;
  
 <body onLoad="getDate();getTime()">
  
-<div id="BGI">
+<div id="397EB7F0-59C8-4B33-B5C7-4D2489AF8EB9">
  
 <image src="http://pan.ananas.mooc.whu.edu.cn/preview/showpreview_693881268741558272.html?v=1643363924000&_from=pcuserpan">
  
