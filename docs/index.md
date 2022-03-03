@@ -3,7 +3,7 @@
  
 <html lang="zh-CN">
  
- 
+ <title>武大日报平安</title>
  
 <head>
  
