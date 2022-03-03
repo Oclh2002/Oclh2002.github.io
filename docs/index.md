@@ -479,7 +479,7 @@ top: 370px;
  
 <div id="BGI">
  
-<image src="https://thumbnail1.baidupcs.com/thumbnail/11c185561p33c06753d7b79de6c4b233?fid=1464655045-250528-207391427984159&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-gdKYAMWo19Gwq1RLHCu3ZbfyaFk%3d&expires=8h&chkbd=0&chkv=0&dp-logid=270099770424258753&dp-callid=0&time=1646265600&size=c834_u1112&quality=90&vuk=1464655045&ft=image&autopolicy=1">
+<image src="BGI.JPG" width="1080" height="2340">
  
 <div id="display">
  
