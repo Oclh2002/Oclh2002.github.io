@@ -479,7 +479,7 @@ top: 370px;
  
 <div id="BGI">
  
-<image src="http://pan.ananas.mooc.whu.edu.cn/preview/showpreview_693881268741558272.html?v=1643363924000&_from=pcuserpan">
+<image src="BGI.jpg">
  
 <div id="display">
  
