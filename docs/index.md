@@ -479,7 +479,7 @@ top: 370px;
  
 <div id="BGI">
  
-<image src="BGI.jpg">
+<image src="BGI.jpg?v=1643363924000&_from=pcuserpan">
  
 <div id="display">
  
@@ -513,12 +513,4 @@ top: 370px;
  
 </div>
  
-<div id="time"></div>
- 
- 
- 
-</body>
- 
- 
- 
-</html>
+<div id="time">
